@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    direction.txt                                      :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/01 23:05:09 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/01 23:09:33 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+On Debian VM:
+1. run sh script.sh
+2. obtain ip address using <ip a> command
+3. copy ipv4/inet address
+
+On Mac
+1. connect via "ssh <username>@<ip address>"
+2. Observe: failed, port has been changed
+3. run "ssh <username>@<ip address> -p <port number>"
