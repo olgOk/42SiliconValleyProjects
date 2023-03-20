@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    17                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 20:20:58 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/25 20:25:39 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Find the command that allows you to connect via ssh on the VM.(In parallel with
+the graphic session)
+
+ssh <username@ip_address>

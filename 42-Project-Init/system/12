@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 16:30:56 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/25 19:52:36 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Figure out the exact size of each folder of /var in a humanly understandable way
+followed by the path of it.
+
+du -sh /var/*

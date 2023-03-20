@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    19                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 20:37:12 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/27 09:03:13 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# List all services which are started at boot time and name this kind of
+#services
+
+systemctl list-units --type service 

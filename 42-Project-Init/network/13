@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    13                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/24 19:49:40 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/24 20:07:56 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Thanks to the previous question and the reverse DNS find the name of your host
+
+#use command host 10.51.1.253, where IP address can be obtained using 
+#ipconfig getoption en0 server_identifier and reverse the result
+
+host 10.51.1.253

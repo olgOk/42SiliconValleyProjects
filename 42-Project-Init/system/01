@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    01                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 10:03:56 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/25 10:20:02 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# In what file can you find the installed version of your Debian?
+
+# you can use one of the following option:
+
+1. cat /etc/issue
+2. cat /etc/debian_version
+3. cat /etc/os-release

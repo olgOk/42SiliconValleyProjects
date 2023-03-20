@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    03                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/28 10:53:34 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/28 11:26:18 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Write a script of you choice.
+# Chose editor 
+
+#!/bin/bash
+echo "Please select an editor"
+echo "1 to run nano"
+echo "2 to run vi"
+echo "3 to exit"
+read doing
+
+case $doing in
+1)
+/bin/nano
+;;
+2)
+/usr/bin/vi
+;;
+3)
+exit 0
+;;
+*)
+echo "Unsupported action! Try again"
+esac
+

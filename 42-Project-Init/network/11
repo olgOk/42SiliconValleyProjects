@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/24 19:25:11 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/24 19:27:40 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Use the output of the previous command to find the name and IP address of the
+device that makes the link between you (local network) and the outside world
+
+nat (10.90.1.11)

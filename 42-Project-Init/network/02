@@ -1,0 +1,19 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/23 11:55:54 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/28 12:03:01 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Identify and display the Ethernet interface characteristics:
+#   (a) Identify broadcast address
+#   (b) Identify all IP adresses which are part of the same subnet
+
+ifconfig en0 | grep  "broadcast " | cut -c 39-61
+
+ifconfig en0 | grep "inet " | cut -c 2-17

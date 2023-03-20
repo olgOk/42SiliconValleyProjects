@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/24 15:23:51 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/24 15:31:01 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Get the complete path of the file that contains the IP address of the DNS
+#server you’re using
+
+cat /etc/resolv.conf

@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    11                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 16:21:27 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/25 16:30:46 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Name the command that displays the available space left and used on the system
+#in an humanly understandable way
+ 
+df -h

@@ -1,0 +1,21 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    23                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/27 09:28:47 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/27 11:08:54 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Explain how connect yourself as new user.
+#(With graphic session and ssh session)
+ 
+Connecting with ssh session:
+-> ssh user_name@ip_address  -- password to user_name account
+
+Connecting with graphic session:
+-> find 'switch user' in the top right corner of your VM,
+login as a different user

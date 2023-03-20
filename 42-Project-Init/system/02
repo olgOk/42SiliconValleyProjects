@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/25 10:20:21 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/25 10:33:29 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# What command can you use to rename your system?
+
+# as a root use the command:
+
+hostnamectl set-hostname <host_name>

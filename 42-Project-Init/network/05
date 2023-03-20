@@ -1,0 +1,16 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    05                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/24 15:08:07 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/24 15:23:34 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#Identify the IP address of the DNS that responds
+#to the following url: slash16.org
+
+nslookup slash16.org | grep Server | awk '{print $1,$2}'

@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/03/24 15:45:29 by vokrut            #+#    #+#              #
+#    Updated: 2019/03/24 16:05:58 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Find the provider of slash16.org
+
+go to hostingchecker.com, provide slash16.org in the 'find hosting' filed
+use 'Server IP' in the whois command
+
+whois 13.35.87.19 | grep OrgName
