@@ -1,0 +1,25 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    docker-compose.yml                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/26 20:45:24 by vokrut            #+#    #+#              #
+#    Updated: 2019/06/26 21:09:12 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+version: "2"
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 6080:8080
+    

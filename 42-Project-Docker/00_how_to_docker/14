@@ -1,0 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    14                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/20 17:43:22 by vokrut            #+#    #+#              #
+#    Updated: 2019/06/27 09:16:32 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker network create zerg
+docker network connect zerg spawning-pool
+docker run --network zerg \
+-d --name lair -p 8080:80 \
+-e WORDPRESS_DB_NAME=zerglings \
+-e WORDPRESS_DB_HOST=spawning-pool \
+-e WORDPRESS_DB_USER=root \
+-e WORDPRESS_DB_PASSWORD=Kerrigan wordpress

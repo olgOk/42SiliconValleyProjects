@@ -1,0 +1,26 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    docker-compose.yml                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/26 20:11:26 by vokrut            #+#    #+#              #
+#    Updated: 2019/06/27 14:34:05 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+version: "2"
+services:
+  node:
+    image: "node:8"
+    user: "node"
+    container_name: node-app
+    working_dir: /home/node/app
+    environment:
+      NODE_ENV: production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "8081"
+    command: "npm start"

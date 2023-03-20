@@ -1,0 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    12                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: vokrut <vokrut@student.42.fr>              +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/06/20 16:32:38 by vokrut            #+#    #+#              #
+#    Updated: 2019/06/27 09:13:35 by vokrut           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+docker run -d --name=spawning-pool --restart on-failure  -e MYSQL_ROOT_PASSWORD=Kerrigan \
+-v hatchery:/var/lib/mysql -e MYSQL_DATABASE=zerglings mysql --default-authentication-plugin=mysql_native_password
