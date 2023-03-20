@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="lang">
+    <head>
+        <title>Calc</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30"; balloon.html>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+        </style>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            var first;
+            var second;
+            var oper;
+            var result;
+            $(document).ready(function() {
+                setInterval("alert('Please, use me...')" ,30000)
+            })
+            function handleErrors() {
+                first = $('#first').val();
+                second = $('#second').val();
+                oper = $('#operation').val();
+                if (first < 0 || second < 0) {
+                    alert("Error!");
+                    return false;
+                }
+                if (second == 0 && (oper == "/" || oper == "%")) {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                    return true;
+                }
+                result = calculate(first, oper, second);
+                alert(result);
+                return false;
+            }
+
+            function calculate(first, oper, second) {
+                if (oper == '+') {
+                    result = Number(first) + Number(second); }
+                else if (oper == '-'){ 
+                    result = Number(first) - Number(second); }
+                else if  (oper == '*'){
+                    result = Number(first) * Number(second);}
+                else if  (oper == '/'){ 
+                    result = Number(first) / Number(second); }
+                else if (oper == '%') {
+                    result = Number(first) % Number(second); }
+                return (result);
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return handleErrors()">
+                <input type="number" id="first">
+                <select id="operation" name="action">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                </select>
+                <input type="number" id="second">
+                <input type="submit" value="Try me!" id="send">
+        </form>
+        
+    </body>
+</html>

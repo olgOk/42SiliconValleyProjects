@@ -1,0 +1,154 @@
+body{
+    background-color: darkgrey;
+    margin: 18px 0xp 0px 8px
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 1420px;
+    position: relative;
+}
+header{
+    top: 20px;
+    left: 15px;
+    height: 130px;
+    width: 1400px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(144,144,144);
+}
+
+header img.logo{
+    height: 110px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+header img.loupe{
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+
+header img.reload{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 20px;
+}
+
+header img.close{
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    width: 20px;
+}
+
+nav{
+    height: 450px;
+    width: 140px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(144,144,144);
+    top: 40px;
+    left: 30px;
+}
+
+nav img{
+    width: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+nav img.look{
+    border: 5px solid red;
+    border-radius: 5px;
+    width: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+section{
+    margin: -408px 0px 0px 200px;
+    widows: 1020px;
+    height: 582px;
+    position: relative;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(144,144,144);
+}
+
+section img.cluster{
+    margin: 10px;
+    width: 1000px;
+    height: 550px;
+}
+
+aside{
+    height: 450px;
+    width: 140px;
+    position: relative;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(131, 129, 129);
+    top: -408px;
+    right: -30px;
+}
+
+aside img{
+    width: 70px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.form{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    bottom: 100px;
+    left: 50px;
+    padding: 10px;
+    font-family: arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-radius: 5px;
+    background-color: lightgreen;
+}
+#entrez{
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+    font-size: 30px;
+    font: bolder;
+}
+
+#ord{
+    text-shadow: 5px 5px 5px red;
+}
+#bon{
+    font: italic;
+}
+.txt
+{
+    margin-left: 2px;
+    width: 300px;
+    border: 2px solid rgb(131, 126, 131);
+    border-bottom-color: rgb(238,238,238);
+    border-right-color: rgb(238,238,238);
+    height: 15px; 
+}
+
+.sbmt
+{
+    border: 1px solid rgb(168,164,165);
+    border-radius: 1px;
+    margin-left: 4px;
+    height: 22px;
+    font-size:12px;
+    letter-spacing: 1px;
+    background: rgb(224,224,224);
+    
+}

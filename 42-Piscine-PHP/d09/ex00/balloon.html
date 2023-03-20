@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="lang">
+    <head>
+        <title>Balloon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <div id="target" onclick="on_mouse_click()" onmouseleave="on_mouse_leave()" style="background-color:red; width: 200px; height: 200px; border-radius: 100px;">
+            <script type="text/javascript">
+                on_mouse_click = () => {
+                    let color = document.getElementById("target").style.backgroundColor;
+                    switch (color) {
+                        case 'red':
+                            document.getElementById("target").style.backgroundColor = "green";
+                            break;
+                        case 'green':
+                            document.getElementById("target").style.backgroundColor = "blue";
+                            break;
+                        case 'blue':
+                            document.getElementById("target").style.backgroundColor = "red";
+                            break;
+                    };
+                    let width = parseInt(document.getElementById("target").style.width);
+                    if (width > 420) {
+                        document.getElementById("target").style.width = "200px";
+                        document.getElementById("target").style.height = "200px";
+                    } else {
+                        document.getElementById("target").style.width = width + 10 + "px";
+                        document.getElementById("target").style.height = width + 10 + "px";
+                        document.getElementById("target").style.borderRadius = width + 10 + "px";
+                    }
+                };
+                on_mouse_leave = () => {
+                    let color = document.getElementById("target").style.backgroundColor;
+                    switch (color) {
+                        case 'red':
+                            document.getElementById("target").style.backgroundColor = "blue";
+                            break;
+                        case 'green':
+                            document.getElementById("target").style.backgroundColor = "red";
+                            break;
+                        case 'blue':
+                            document.getElementById("target").style.backgroundColor = "green";
+                            break;
+                    };
+                    let width = parseInt(document.getElementById("target").style.width);
+                    if (width === 200) {
+                        return;
+                    } else {
+                        document.getElementById("target").style.width = width - 5 + "px";
+                        document.getElementById("target").style.height = width - 5 + "px";
+                        document.getElementById("target").style.borderRadius = width - 2.5 + "px";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    font-family: 'Lucida Sans';
+}
+
+#title{
+    font-size: 5vw;
+    text-align: center;
+    font-style: italic;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: darkred;
+    padding: 16px;
+    font-size: 4vw;
+    border: none;
+    border-radius: .9vw;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: pink;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: darkcyan;}

@@ -1,0 +1,89 @@
+body {
+    font-family: Arial;
+}
+.header {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.divimg {
+    width: 25%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tb{
+    align-content: right;
+}
+.element{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+.periodic-number{
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 0.9vw;
+    margin: 0vw 0vw 0.2vw 0.4vw
+}
+.atomic-weight{
+    text-align: right;
+    vertical-align: top;
+    font-size: 0.8vw;
+    margin: 0.3vw 0.4vw 0vw 0.1vw;
+}
+.non-metal{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: silver;
+}
+.noble-gas{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: lightskyblue;
+}
+.alkali-me{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: orange;
+}
+.alkali-eme{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: brown;
+}
+.metaloid{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: lightgreen;
+}
+.hallogen{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: turquoise;
+}
+.metal{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: green;
+}
+.transision-me{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: yellow;
+}
+.lanthanide{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: purple;
+}
+.actinide{
+    width: 0.8vw;
+    margin: 5%;
+    background-color: violet;
+}

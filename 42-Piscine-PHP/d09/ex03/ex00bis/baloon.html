@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="lang">
+    <head>
+        <title>Balloon jQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            #balloon {
+                background: red;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+        <div  id="balloon"></div>
+        <script>
+                var color = "red";
+var balloon;
+
+function grow()
+{
+	if (color == "red")
+        color = "green";
+    else if (color == "green")
+        color = "blue";
+    else
+        color = "red";
+	balloon.css("background", color);
+	balloon.css("width", balloon.width() + 5 + "px");
+	balloon.css("height", balloon.width() + 5 + "px");
+	if (balloon.width() > 420)
+	{
+		balloon.css("width", "200px");
+		balloon.css("height", "200px");
+	}
+}
+function shrink()
+{
+	if (color == "red")
+        color = "blue";
+    else if (color == "green")
+        color = "red";
+    else
+        color = "green";
+	balloon.css("background", color);
+	balloon.css("width", balloon.width() - 5 + "px");
+	balloon.css("height", balloon.height() - 5 + "px");
+	if (balloon.width() < 200)
+	{
+		balloon.css("width", "200px");
+		balloon.css("height", "200px");
+	}
+}
+
+
+$(document).ready(function (){
+	balloon = $("#balloon");
+	balloon.click(function (){grow();});
+	balloon.mouseout(function (){shrink();});
+});
+
+            </script>
+    </body>
+</html>

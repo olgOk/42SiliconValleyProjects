@@ -1,0 +1,32 @@
+<- Matrix --------------------------------------
+
+An instance can be constructed in the following way:
+
+new Matrix( array( 'preset' => Matrix::[preset], [key] => [value]) );
+
+>>Presets:
+-IDENTITY
+-SCALE
+-RX
+-RY
+-RZ
+-TRANSLATION
+-PROJECTION
+
+>>The keys are :
+-preset
+-scale
+-angle
+-vtc
+-fov
+-ratio
+-near
+-far
+
+Available methods:
+
+>> Matrix mult( Matrix $rhs ) : returns the multiplication of both matrices.
+>> Vertex transformVertex( Vertex $vtx ) : returns a new vertex resulting
+    from the transformation of the vertex by the matrix.
+
+------------------------------ Matrix ->

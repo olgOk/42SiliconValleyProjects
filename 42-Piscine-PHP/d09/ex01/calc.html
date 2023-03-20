@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lang">
+    <head>
+        <title>Calc</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30"; balloon.html>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <input type="number" id="first">
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="number" id="second">
+        <input type="submit" value="Try me!" onclick="calculate()">
+        <script type="text/javascript">
+            calculate = () => {
+                let num1 = parseInt(document.getElementById("first").value);
+                let num2 = parseInt(document.getElementById("second").value);
+                const oper = document.getElementById("operation").value;
+                let res;
+                if (num1 < 0 || num2 < 0) {
+                    alert("Error :(");
+                };
+                if ((oper === '/' || oper === '%') && num2 === 0) {
+                    console.log("It’s over 9000!");
+                    alert("It’s over 9000!")
+                };
+                if (oper === '+') {
+                    res = num1 + num2;
+                } else if (oper === '-') {
+                    res = num1 - num2;
+                } else if (oper === '*') {
+                    res = num1 * num2;
+                } else if (oper === '/') {
+                    res = num1 / num2;
+                } else if (oper === '%') {
+                    res = num1 % num2;
+                };
+                console.log(res);
+                alert(res);
+            };
+            setInterval(() => {
+                alert("Please, use me...");
+            }, 30000);
+        </script>
+    </body>
+</html>

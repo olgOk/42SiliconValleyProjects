@@ -1,0 +1,27 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class manages x, y, z, w coordinates, and color described by ColorClass class.
+
+An instance might be constructed in the following way:
+new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+
+It is possible to use the option with color as follows:
+$green = new Color( array( 'red' =>   0, 'green' => 255, 'blue' =>   0 ) );
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0, 'color' => $green ) );
+
+w coordinate by defualt should be 1.0,
+color by defualt is white (0xffffff);
+
+The class provides the following methods for setting value:
+Vertex	setX( $x );
+Vertex	setY( $y );
+Vertex	setZ( $z );
+Vertex	setW( $w );
+Vertex	setColor( Color $color );
+
+And for get value:
+Vertex	getX( );
+Vertex	getY( );
+Vertex	getZ( );
+Vertex	getW( );
+Vertex	getColor( ); (will return Color class object)
+---------------------------------------------------------------------- Vertex ->
